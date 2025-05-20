@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Academy</title>
+    <link rel="stylesheet" href="/pixel_aca/style.css">
+   <link rel="icon" href="/pixel_aca/piximage/favc.jpg" type="image/png" />
+    <style>
+  
+   
+        :root {
+            --primary-dark: #38006b;
+            --light: #f5f5f5;
+            --accent: #ffc107;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .hero {
+            position: relative;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+        }
+        
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--primary-dark);
+            opacity: 0.5; /* Lighter overlay */
+            z-index: 1;
+        }
+        
+        .container2 {
+            position: relative;
+            text-align: center;
+            padding: 0 1rem;
+            max-width: 800px;
+            z-index: 2; 
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            p { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="container nav-container">
+             <a href="index.html" class="logo"><img src="/pixel_aca/piximage/fav.png" alt="">    Pixel <span>Academy</span> </a>
+            <button class="hamburger">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="insight.html">Insights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+        <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="/pixel_aca/piximage/programs.mp4" type="video/mp4">
+            <!-- Using a CDN video as placeholder -->
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container2">
+            <h1>Our Programs</h1>
+            <p>Discover the perfect program to unleash your digital potential</p>
+        </div>
+    </section>
+
+        <section class="programs-section">
+            <div class="container">
+                <div class="program-item">
+                    <div class="program-image">
+                        <img src="/pixel_aca/piximage/game2.jpg" alt="Game Development Program">
+                    </div>
+                    <div class="program-content">
+                        <h3>Game Development</h3>
+                        <p>Learn to create your own games from concept to completion. Our comprehensive game development program covers everything from game design principles to coding game mechanics and creating engaging visual assets.</p>
+                        <div class="program-details">
+                            <div class="program-detail">
+                                <span class="program-icon">📅</span>
+                                <span>8 Weeks</span>
+                            </div>
+                            <div class="program-detail">
+                                <span class="program-icon">👥</span>
+                                <span>Ages 12-18</span>
+                            </div>
+                            <div class="program-detail">
+                                <span class="program-icon">💻</span>
+                                <span>Beginner to Intermediate</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="program-item">
+                    <div class="program-image">
+                        <img src="/pixel_aca/piximage/digital_art2.jpeg" alt="Digital Art Program">
+                    </div>
+                    <div class="program-content">
+                        <h3>Digital Art & Design</h3>
+                        <p>Unleash your creativity with our Digital Art & Design program. Students will learn digital illustration, graphic design principles, animation techniques, and how to use industry-standard creative software tools.</p>
+                        <div class="program-details">
+                            <div class="program-detail">
+                                <span class="program-icon">📅</span>
+                                <span>10 Weeks</span>
+                            </div>
+                            <div class="program-detail">
+                                <span class="program-icon">👥</span>
+                                <span>Ages 10-16</span>
+                            </div>
+                            <div class="program-detail">
+                                <span class="program-icon">💻</span>
+                                <span>All Skill Levels</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="program-item">
+                    <div class="program-image">
+                        <img src="/pixel_aca/piximage/web_dev.jpg" alt="Web Development Program">
+                    </div>
+                    <div class="program-content">
+                        <h3>Web Development</h3>
+                        <p>Build dynamic websites and web applications from scratch. Students will learn HTML, CSS, JavaScript, and responsive design principles to create modern, interactive web experiences.</p>
+                        <div class="program-details">
+                            <div class="program-detail">
+                                <span class="program-icon">📅</span>
+                                <span>12 Weeks</span>
+                            </div>
+                            <div class="program-detail">
+                                <span class="program-icon">👥</span>
+                                <span>Ages 13-18</span>
+                            </div>
+                            <div class="program-detail">
+                                <span class="program-icon">💻</span>
+                                <span>Beginner to Advanced</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="program-item">
+                    <div class="program-image">
+                        <img src="/pixel_aca/piximage/robotics.jpeg" alt="Robotics Program">
+                    </div>
+                    <div class="program-content">
+                        <h3>Robotics & AI</h3>
+                        <p>Dive into the exciting world of robotics and artificial intelligence. Students will design, build, and program robots while learning about sensors, actuators, and the basics of machine learning.</p>
+                        <div class="program-details">
+                            <div class="program-detail">
+                                <span class="program-icon">📅</span>
+                                <span>8 Weeks</span>
+                            </div>
+                            <div class="program-detail">
+                                <span class="program-icon">👥</span>
+                                <span>Ages 11-17</span>
+                            </div>
+                            <div class="program-detail">
+                                <span class="program-icon">💻</span>
+                                <span>Beginner Friendly</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Pixel Academy</h3>
+                    <p>Empowering the next generation with digital skills and creative technology education.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="/pixel_aca/piximage/facebook.png" alt=""></a>
+                        <a href="#" class="social-link"><img src="/pixel_aca/piximage/x.png" alt=""></a>
+                        <a href="#" class="social-link"><img src="/pixel_aca/piximage/ig.png" alt=""></a>
+                        <a href="#" class="social-link"><img src="/pixel_aca/piximage/youtube.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Game Development</a></li>
+                        <li><a href="#">Digital Art & Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Robotics & AI</a></li>
+                        <li><a href="#">Summer Camps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog & Insights</a></li>
+                        <li><a href="#">Student Showcase</a></li>
+                        <li><a href="#">Free Tutorials</a></li>
+                        <li><a href="#">Community Projects</a></li>
+                        <li><a href="#">Parent Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>123 Tech Avenue, Digital City</li>
+                        <li>Innovation District, 10101</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: info@pixelacademy.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pixel Academy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    // Simple JavaScript to handle hamburger menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    // Get elements
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+    
+    // Toggle mobile menu when hamburger is clicked
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+    
+    // Highlight active navigation link based on current page
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navItems.forEach(item => {
+        // Add active class to current page link
+        if (item.getAttribute('href') === currentPage) {
+            item.classList.add('active');
+        }
+        
+        // Close mobile menu when a link is clicked
+        item.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+        });
+    });
+});
+                </script>
+</html>
