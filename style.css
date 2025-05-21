@@ -138,12 +138,13 @@
         }
         
         .hero-content {
+               position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
             color: var(--light);
-            padding: 2rem;
-            max-width: 800px;
-           margin: auto;
-            z-index: 1;
+            z-index: 2;
         }
         
         .hero-content h1 {
