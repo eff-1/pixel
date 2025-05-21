@@ -142,6 +142,7 @@
             color: var(--light);
             padding: 2rem;
             max-width: 800px;
+           margin: auto;
             z-index: 1;
         }
         
